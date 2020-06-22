@@ -15,8 +15,8 @@ jobs:
         with:
           node-version: 12.x
       - run: |
-        npm ci
-        npm run all
+          npm ci
+          npm run all
       - name: Verify no unstaged changes
         run: |
           if [[ "$(git status --porcelain)" != "" ]]; then
